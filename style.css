@@ -1,0 +1,151 @@
+@import url(normalize.css);
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html {
+    font-size: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    line-height: 1.4;
+}
+.main{
+    z-index: 0;
+    position: relative;
+    min-height: 100vh;
+    background-color: #674bb1;
+    /*background-image: url(images/bg-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;*/
+}
+.mobile{
+    display: none;
+}
+.background_image{
+    position: absolute;
+    z-index: -1;
+    width: 85%;
+    height: 100%;
+}
+.main_content{
+    margin: 0 5%;
+    width: 90%;
+    min-height: 97vh; 
+    z-index: 0;
+    position: relative;
+}
+.logo{
+    
+    padding-top: 3.5%;
+}
+.logo_item{
+    
+    height: 3rem;
+}
+.main_content_sections{
+    display: flex;
+}
+.left_section{
+    padding-top: 2.8rem;
+    width: 52%;
+}
+.right_section{
+    width: 34%;
+}
+.main_img{
+    width: 95%;
+}
+.right_section{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    margin: 23% 0 0 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.65;
+}
+.description{
+    color: #fff;
+    
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.button{
+    text-align: center;
+    display: block;
+    width: 12.5rem;
+    height: 3.5rem;
+    border-radius: 3rem;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    text-decoration: none;
+    box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.5);
+}
+.button_description{
+    transform: translateY(75%);
+    font-weight: 600;
+    
+}
+.button:hover{
+    background-color: #46057d;
+    color: #f449f2;
+}
+.main_content_links{
+    display: flex;
+    margin-right: 4%;
+    float: right;
+    width: 18%;
+    justify-content: space-between;
+    
+}
+.social_link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.link_icon{
+    
+    fill:#fff;
+}
+.first,
+.second{
+    width: 100%;
+    height: 100%;
+}
+.third{
+        padding-top: 4px;
+    width: 90%;
+    height: 90%;
+}
+.link_icon:hover{
+    fill: #fbba7a;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.attribution { font-size: 0.6875rem; text-align: center; margin: 0;}
+    .attribution a { color: #fcae80; }
+.attribution a:hover{
+    color: #fff;
+}
